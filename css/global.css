@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+}

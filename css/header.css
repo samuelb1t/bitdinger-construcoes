@@ -1,0 +1,44 @@
+body {
+  display: grid;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 30px auto 0 auto;
+}
+
+header {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+header img {
+  width: 170px;
+}
+
+header nav {
+  display: block;
+  justify-self: center;
+}
+
+.flex {
+  display: flex;
+}
+
+ul {
+  gap: 100px;
+}
+
+li {
+  gap: 10px;
+}
+
+li img {
+  width: 25px;
+}
+
+li a {
+  font-size: 2rem;
+  color: black;
+}

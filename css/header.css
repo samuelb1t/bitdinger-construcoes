@@ -41,4 +41,57 @@ li img {
 li a {
   font-size: 2rem;
   color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+@media(max-width:1200px) {
+  header {
+    width: 800px;
+    justify-items: center;
+  }
+
+  ul {
+    gap: 50px;
+  }
+}
+
+@media(max-width:800px) {
+  header {
+    width: 650px;
+  }
+
+  header img {
+    width: 150px;
+  }
+
+  li img {
+    width: 20px;
+  }
+
+  li a {
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width:600px) {
+  header {
+    width: 450px;
+  }
+
+  header img {
+    width: 100px;
+  }
+
+  ul {
+    gap: 30px;
+  }
+
+  li img {
+    width: 15px;
+  }
+
+  li a {
+    font-size: 1rem;
+  }
 }

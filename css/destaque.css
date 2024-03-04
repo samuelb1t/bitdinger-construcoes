@@ -1,0 +1,132 @@
+main {
+  max-width: 1200px;
+  background-color: var(--cor-bg-2);
+  margin-top: 150px;
+  padding: 25px;
+  gap: 5px 25px;
+  position: relative;
+}
+
+main::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  background-color: var(--cor-destaque);
+  width: 5px;
+  position: absolute;
+  left: -5px;
+  border-radius: 5px 0 0 5px;
+}
+
+main h1 {
+  grid-column: 1/-1;
+  margin-left: 10px;
+  position: relative;
+}
+
+main h1:before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 11px;
+  position: absolute;
+  background-color: #304D30;
+  bottom: 13px;
+  left: -7px;
+  border-radius: 0 0 0 5px;
+}
+
+main img {
+  width: 450px;
+}
+
+main article {
+  gap: 60px;
+  justify-content: space-between;
+}
+
+main section {
+  margin-top: 5px;
+  background-color: var(--cor-bg);
+  padding: 25px 0px;
+  width: 200px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  position: relative;
+}
+
+main section::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 5px;
+  position: absolute;
+  background-color: var(--cor-destaque);
+  top: -5px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+main section::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 5px;
+  position: absolute;
+  background-color: var(--cor-destaque);
+  bottom: -5px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+section p {
+  font-family: var(--tipografia-rasa);
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+main div {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: end;
+  align-items: end;
+}
+
+main nav {
+  gap: 50px;
+  align-items: center;
+}
+
+main nav a {
+  font-size: 1.5rem;
+  font-family: var(--tipografia-lato);
+  text-transform: uppercase;
+  padding: 7.5px 17.5px;
+}
+
+main nav .botao-casas {
+  color: var(--cor-destaque);
+  border: 4px solid var(--cor-destaque);
+  border-radius: 5px;
+  transition: .3s;
+}
+
+main nav .botao-casas:hover {
+  color: #E6EDE6;
+  background-color: var(--cor-destaque);
+  border-radius: 5px;
+}
+
+main nav .botao-info {
+  color: #E6EDE6;
+  background-color: var(--cor-destaque);
+  border-radius: 5px;
+  border: 4px solid var(--cor-destaque);
+  transition: .3s;
+}
+
+main nav .botao-info:hover {
+  color: var(--cor-destaque);
+  background-color: var(--cor-bg-2);
+}

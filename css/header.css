@@ -6,11 +6,7 @@ body {
 }
 
 header {
-  width: 1200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   justify-items: center;
-  align-items: center;
 }
 
 header img {
@@ -19,10 +15,6 @@ header img {
 
 header nav {
   display: block;
-}
-
-.flex {
-  display: flex;
 }
 
 ul {
@@ -38,9 +30,9 @@ li img {
 }
 
 li a {
-  font-size: 2rem;
-  color: black;
-  font-family: "Lato", sans-serif;
+  font-size: 1.75rem;
+  color: var(--cor-tipografia);
+  font-family: var(--tipografia-lato);
   font-weight: bold;
 }
 

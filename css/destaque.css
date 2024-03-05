@@ -22,6 +22,7 @@ main h1 {
   grid-column: 1/-1;
   margin-left: 10px;
   position: relative;
+  width: auto;
 }
 
 main h1:before {
@@ -102,7 +103,7 @@ main nav a {
   font-size: 1.5rem;
   font-family: var(--tipografia-lato);
   text-transform: uppercase;
-  padding: 7.5px 17.5px;
+  padding: 7.5px 15px;
 }
 
 main nav .botao-casas {
@@ -129,4 +130,126 @@ main nav .botao-info {
 main nav .botao-info:hover {
   color: var(--cor-destaque);
   background-color: var(--cor-bg-2);
+}
+
+@media(max-width:1350px) {
+  main {
+    max-width: 1000px;
+    gap: 5px 10px;
+    grid-template-columns: auto 1fr !important;
+  }
+
+  main img {
+    width: 400px;
+  }
+
+  main article {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main nav a {
+    font-size: 1.25rem;
+    padding: 5px 10px;
+  }
+
+  main section {
+    width: 160px;
+  }
+
+  main section::after {
+    width: 160px
+  }
+
+  main section::before {
+    width: 160px
+  }
+
+  main section p {
+    font-size: 1.25rem;
+  }
+}
+
+@media(max-width:1000px) {
+  main {
+    max-width: 800px;
+  }
+
+  main div {
+    gap: 15px;
+  }
+
+  main section {
+    width: 120px;
+    padding: 10px 0px;
+    gap: 10px;
+  }
+
+  main section::after {
+    width: 120px
+  }
+
+  main section::before {
+    width: 120px
+  }
+
+  main nav {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+
+@media(max-width:850px) {
+  main {
+    max-width: 450px;
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+    gap: 30px;
+  }
+
+  main div {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media(max-width:600px) {
+  main::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: var(--cor-destaque);
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+@media(max-width:450px) {
+  main {
+    max-width: 250px;
+  }
+
+  main h1 {
+    font-size: 1.75rem !important;
+  }
+
+  main img {
+    width: 200px;
+  }
+
+  main section p {
+    font-size: 1rem;
+  }
+
+  main nav a {
+    font-size: 1rem;
+  }
+
+
 }

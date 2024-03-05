@@ -50,10 +50,15 @@ li a {
 @media(max-width:800px) {
   header {
     width: 650px;
+    justify-items: left;
   }
 
   header img {
     width: 150px;
+  }
+
+  ul {
+    gap: 25px;
   }
 
   li img {
@@ -68,6 +73,7 @@ li a {
 @media(max-width:600px) {
   header {
     width: 450px;
+    justify-items: center;
   }
 
   header img {
@@ -83,18 +89,18 @@ li a {
   }
 
   li a {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 
-@media(max-width:400px) {
+@media(max-width:450px) {
   header {
     width: 250px;
     justify-items: left;
   }
 
   header img {
-    width: 80px;
+    width: 100px;
   }
 
   ul {

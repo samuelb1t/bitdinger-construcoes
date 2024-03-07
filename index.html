@@ -9,49 +9,57 @@
 </head>
 
 <body>
-  <header class="container">
-    <img src="./img/logo.svg" alt="Logo Bitdinger Construções">
+  <header class="header">
+    <img class="logo" src="./img/logo.svg" alt="Logo Bitdinger Construções">
     <nav>
       <ul class="flex">
-        <li class="flex">
-          <a href="/">
-            <img src="./img/casa.svg" alt="">
+        <li>
+          <a class="flex" href="/">
+            <img src="./img/casa.svg" alt="ícone casa">
             Casas
           </a>
         </li>
-        <li class="flex">
-          <a href="/">
-            <img src="./img/fone.svg" alt="">
+        <li>
+          <a class="flex" href="/">
+            <img src="./img/fone.svg" alt="ícone telefone">
             Contato
           </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="container sombra">
-    <h1 class="titulo">Casa em Destaque:</h1>
-    <img src="./img/foto destaque.jpg" alt="Foto Casa Destaque">
-    <div>
-      <article class="flex">
-        <section class="sombra">
-          <p class="medium">Área <br>Construida</p>
-          <p class="bold">136,83m²</p>
-        </section>
-        <section class="sombra">
-          <p class="medium">Jardim dos Lagos III</p>
-          <p class="bold">Guaíba-RS</p>
-        </section>
-        <section class="sombra">
-          <p class="bold">Acabamentos <br>em <br>alto padrão</p>
-        </section>
+  <main>
+    <div class="container-sobre">
+      <article class="sobre">
+        <h1 class="titulo">titulo</h1>
+        <p class="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        <a class="btn" href="/">Nossas Casas</a>
       </article>
-      <nav class="flex">
-        <a class="botao-casas" href="/">Mais Casas</a>
-        <a class="botao-info" href="/">Mais informações</a>
-      </nav>
+      <img src="./img/foto-sobre.jpg" alt="Foto de uma casa">
+    </div>
+    <div class="container-destaque">
+      <section class="destaque sombra">
+        <h1 class="titulo">Casa em Destaque:</h1>
+        <img src="./img/foto destaque.jpg" alt="Foto Casa Destaque">
+        <div>
+          <article class="item-container">
+            <section class="item sombra">
+              <p class="item-txt">Área <br>Construida</p>
+              <p class="item-txt bold">136,83m²</p>
+            </section>
+            <section class="item sombra">
+              <p class="item-txt">Jardim dos Lagos III</p>
+              <p class="item-txt bold">Guaíba-RS</p>
+            </section>
+            <section class="item sombra">
+              <p class="item-txt bold">Acabamentos <br>em <br>alto padrão</p>
+            </section>
+          </article>
+          <a class="btn" href="/">Mais informações</a>
+        </div>
+      </section>
     </div>
   </main>
-  <span></span>
 </body>
 
 </html>

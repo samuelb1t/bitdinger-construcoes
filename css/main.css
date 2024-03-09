@@ -11,7 +11,6 @@ main {
   max-width: 1200px;
 }
 
-
 .sobre {
   background-color: var(--cor-bg-2);
   background-color: #ededed;
@@ -164,4 +163,65 @@ main img {
 
 .bold {
   font-weight: 700;
+}
+
+@media(max-width:1200px) {
+  .container-sobre {
+    max-width: 800px;
+  }
+
+  .container-sobre img {
+    width: 400px;
+  }
+
+  .titulo {
+    font-size: 2.25rem;
+  }
+
+  .txt {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 5px 0 20px 0;
+  }
+
+  .btn {
+    font-size: 1.125rem;
+    padding: 7px 14px;
+  }
+}
+
+@media(max-width:800px) {
+  .container-sobre {
+    max-width: 600px;
+    grid-template-columns: auto;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .container-sobre img {
+    width: 500px;
+  }
+
+  .sobre {
+    text-align: center;
+    width: 400px;
+
+  }
+
+  .sobre::before {
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .titulo {
+    width: auto;
+  }
+
+  .titulo::before {
+    bottom: 13px;
+    left: 150px;
+  }
 }

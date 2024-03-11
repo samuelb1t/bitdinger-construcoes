@@ -118,10 +118,11 @@ li a {
 }
 
 @media(max-width:450px) {
-  header {
+  .header {
     width: 80%;
     justify-items: left;
     gap: 10px;
+    grid-template-columns: 1fr;
   }
 
   header img {
@@ -133,10 +134,11 @@ li a {
   }
 
   li img {
-    display: none;
+    width: 15px;
   }
 
   li a {
     padding: 5px;
+    align-items: center;
   }
 }

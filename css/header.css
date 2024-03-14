@@ -1,7 +1,5 @@
 body {
   margin: 0px;
-  /* display: grid;
-  justify-content: center; */
 }
 
 .header {
@@ -14,15 +12,6 @@ body {
   margin-top: 40px;
 }
 
-.header ul {
-  display: flex;
-}
-
-.header a {
-  display: flex;
-}
-
-
 .logo {
   width: 170px;
   margin-left: 100px;
@@ -32,26 +21,35 @@ header nav {
   justify-self: center;
 }
 
-header nav ul {
+.header ul {
+  display: flex;
   gap: 100px;
 }
 
 li {
-  align-items: center;
-}
-
-li img {
-  width: 22px;
-  margin-top: 2px;
+  border-bottom: 2px solid transparent;
+  transition: .15s;
 }
 
 li a {
+  display: flex;
   font-size: 1.5rem;
   color: var(--cor-tipografia);
   font-family: var(--tipografia-lato);
   font-weight: bold;
   gap: 8px;
   align-items: start;
+  padding: 10px 10px 5px 10px;
+}
+
+li:hover {
+  border-bottom: 2px solid black;
+}
+
+li img {
+  width: 22px;
+  margin-top: 2px;
+  height: 23px;
 }
 
 @media(max-width:1200px) {

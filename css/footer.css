@@ -45,6 +45,7 @@
   position: relative;
   align-items: center;
   line-height: 1.25rem;
+  font-weight: 400;
 }
 
 .footer-info p img {
@@ -69,4 +70,11 @@
 
 .footer-a {
   text-decoration: underline;
+  font-weight: 400;
+  align-self: start;
+  padding: 0 5px;
+}
+
+.footer-a:hover {
+  font-weight: bold;
 }

@@ -68,13 +68,17 @@ main {
   align-self: end;
   justify-self: end;
   display: inline-block;
+  transition: .3s;
+}
+
+.btn:hover {
+  background-color: #125A22;
 }
 
 main img {
   border-radius: 5px;
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .container-destaque {
   background: var(--cor-bg-2);
   padding: 72px 0;

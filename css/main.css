@@ -219,9 +219,6 @@ main img {
   .item-txt {
     font-size: 1rem;
   }
-
-
-
 }
 
 @media(max-width:800px) {

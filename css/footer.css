@@ -68,6 +68,18 @@
   position: relative;
 }
 
+.footer-txt-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.footer-txt-container img {
+  width: 20px;
+  position: absolute;
+  left: -25px;
+}
+
 .footer-a {
   text-decoration: underline;
   font-weight: 400;
@@ -125,10 +137,20 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .footer-txt-container img {
+    width: 18px;
+    left: -20px;
+  }
 }
 
 @media(max-width:450px) {
   .footer-info {
     gap: 10px;
+  }
+
+  .footer-txt-container img {
+    width: 15px;
+    left: -20px;
   }
 }

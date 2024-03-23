@@ -12,6 +12,11 @@
   --tipografia-rasa: "Rasa", serif;
 }
 
+body {
+  margin: 0px;
+  background-color: var(--cor-bg);
+}
+
 img {
   max-width: 100%;
   display: block;

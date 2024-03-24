@@ -38,6 +38,15 @@ main {
   position: relative;
 }
 
+
+.item:nth-child(even) {
+  background-color: var(--cor-bg-3);
+}
+
+.item:nth-child(even) .item-conteudo-container {
+  background-color: var(--cor-bg-2);
+}
+
 .item::before {
   content: "";
   display: block;

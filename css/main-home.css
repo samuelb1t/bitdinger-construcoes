@@ -11,6 +11,11 @@ main {
   max-width: 1200px;
 }
 
+.container-sobre img {
+  height: 400px;
+  width: 600px;
+}
+
 .sobre {
   background-color: var(--cor-bg-2);
   background-color: #ededed;
@@ -182,6 +187,7 @@ main img {
 
   .container-sobre img {
     width: 400px;
+    height: auto;
   }
 
   .titulo {

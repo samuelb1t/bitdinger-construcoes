@@ -59,6 +59,20 @@ main {
   border-radius: 5px 5px 0 0;
 }
 
+.item img {
+  width: 350px;
+  height: 195px;
+  object-fit: cover;
+}
+
+.item .direita {
+  object-position: -65px 0px;
+}
+
+.item .esquerda {
+  object-position: -110px 0px;
+}
+
 .item-conteudo-container {
   display: grid;
   gap: 25px;

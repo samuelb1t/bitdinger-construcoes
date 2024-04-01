@@ -59,6 +59,7 @@ main {
   font-size: 1.25rem;
   margin: 10px 0 24px 0;
   font-weight: 500;
+  color: var(--cor-tipografia);
 }
 
 .btn {
@@ -170,6 +171,7 @@ main img {
   font-family: var(--tipografia-rasa);
   font-size: 1.5rem;
   font-weight: 500;
+  color: var(--cor-tipografia);
 }
 
 .bold {

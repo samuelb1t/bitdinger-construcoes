@@ -27,6 +27,11 @@ li {
   transition: .15s;
 }
 
+.pagina {
+  border-bottom: 0.5px solid var(--cor-preto);
+  transition: 0s;
+}
+
 li a {
   display: flex;
   font-size: 1.5rem;

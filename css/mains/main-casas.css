@@ -17,6 +17,7 @@ main {
   line-height: 2.75rem;
   position: relative;
   margin: 0 0 20px 30px;
+  display: inline-block;
 }
 
 .titulo::before {
@@ -191,15 +192,25 @@ main {
 @media(max-width:600px) {
   main {
     max-width: 450px;
+
+  }
+
+  .titulo {
+    margin: 0px;
+    text-align: center;
+    font-size: 1.75rem;
+    display: block;
+    margin: 0 auto 10px auto;
+    width: max-content;
+  }
+
+  .titulo::before {
+    left: -8px;
   }
 
   .item-container {
     grid-template-columns: 240px;
-  }
-
-  .item .item-foto {
-    width: 240px;
-    height: 150px;
+    justify-content: center;
   }
 }
 

@@ -1,4 +1,4 @@
-@import url(global.css);
-@import url(header.css);
-@import url(main-casas.css);
-@import url(footer.css);
+@import url(./globais/global.css);
+@import url(./globais/header.css);
+@import url(./mains/main-casas.css);
+@import url(./globais/footer.css);

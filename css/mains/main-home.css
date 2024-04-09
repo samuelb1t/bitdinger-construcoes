@@ -172,6 +172,7 @@ main img {
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--cor-tipografia);
+  line-height: 1.4rem;
 }
 
 .bold {

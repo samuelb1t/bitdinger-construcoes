@@ -99,11 +99,12 @@ li img {
 
   .logo {
     width: 100px;
-    margin-left: 0px;
+    margin-left: 25px;
+    justify-self: left;
   }
 
   .header nav ul {
-    gap: 25px;
+    gap: 10px;
   }
 
   li img {
@@ -111,7 +112,8 @@ li img {
   }
 
   li a {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+    width: max-content;
   }
 }
 
@@ -126,6 +128,7 @@ li img {
   .logo {
     display: block;
     justify-self: center;
+    margin: 0px;
   }
 
   .header nav ul {

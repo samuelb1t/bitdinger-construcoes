@@ -129,9 +129,14 @@ main {
   color: #1a1a1a;
 }
 
-/* article:hover .item {
-  border: 1px solid black;
-} */
+.link {
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.link:hover {
+  border: 2px solid #1a1a1a;
+}
 
 @media(max-width:1200px) {
   main {
@@ -224,7 +229,7 @@ main {
 
 @media(max-width:450px) {
   main {
-    width: 80%;
+    width: 100%;
   }
 
   .item .item-foto {
@@ -233,6 +238,10 @@ main {
 
   .item-conteudo-container {
     gap: 10px;
+  }
+
+  .titulo {
+    font-size: 1.75rem;
   }
 
   .item-txt {

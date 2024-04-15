@@ -32,7 +32,8 @@ ul {
 
 h1,
 h2,
-p {
+p,
+a {
   margin: 0px;
 }
 

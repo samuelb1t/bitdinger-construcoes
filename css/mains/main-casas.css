@@ -65,6 +65,25 @@ main {
   height: 195px;
   object-fit: cover;
   border-radius: 5px 5px 0 0;
+  position: relative;
+}
+
+.vendida {
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  border: 3px solid var(--cor-preto);
+  border-radius: 0 5px 5px 0;
+  padding: 5px 10px;
+  color: var(--cor-preto);
+  background-color: var(--cor-bg-3);
+  font-family: var(--tipografia-rasa);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.item:nth-child(even) .vendida {
+  background-color: var(--cor-bg-2);
 }
 
 .item .direita {
@@ -130,13 +149,14 @@ main {
 }
 
 .link {
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-radius: 5px;
   transition: .3s;
+  position: relative;
 }
 
 .link:hover {
-  border: 2px solid #1a1a1a;
+  border: 3px solid #1a1a1a;
 }
 
 @media(max-width:1200px) {

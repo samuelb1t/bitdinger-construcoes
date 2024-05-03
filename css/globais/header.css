@@ -1,6 +1,5 @@
 .header {
   max-width: 1200px;
-  justify-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -37,9 +36,7 @@ li a {
   font-size: 1.5rem;
   color: var(--cor-tipografia);
   font-family: var(--tipografia-lato);
-  font-weight: bold;
   gap: 8px;
-  align-items: start;
   padding: 10px 10px 5px 10px;
 }
 

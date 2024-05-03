@@ -46,3 +46,34 @@ a {
 .sombra {
   box-shadow: 1px 2px 1px #00000025;
 }
+
+.bold {
+  font-weight: 700;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.titulo {
+  font-size: 2.75rem;
+  font-family: var(--tipografia-rasa);
+  line-height: 2.75rem;
+  position: relative;
+}
+
+.titulo::before {
+  width: 5px;
+  height: 12px;
+  content: "";
+  display: inline;
+  background-color: #1D712F;
+  position: absolute;
+  bottom: 13px;
+  left: -8px;
+  border-radius: 0 0 0 5px;
+}

@@ -10,25 +10,8 @@ main {
 }
 
 .titulo {
-  font-size: 2.75rem;
-  font-family: var(--tipografia-rasa);
-  font-weight: bold;
-  line-height: 2.75rem;
-  position: relative;
   margin: 0 0 20px 30px;
   display: inline-block;
-}
-
-.titulo::before {
-  width: 5px;
-  height: 12px;
-  content: "";
-  display: inline;
-  background-color: #1D712F;
-  position: absolute;
-  bottom: 13px;
-  left: -8px;
-  border-radius: 0 0 0 5px;
 }
 
 .item {
@@ -79,7 +62,7 @@ main {
   background-color: var(--cor-bg-3);
   font-family: var(--tipografia-rasa);
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .item:nth-child(even) .vendida {
@@ -122,12 +105,7 @@ main {
   gap: 50px;
   font-family: var(--tipografia-lato);
   font-size: 1.25rem;
-  font-weight: 500;
   color: #1a1a1a;
-}
-
-.bold {
-  font-weight: 700;
 }
 
 .comodos-container {
@@ -144,7 +122,6 @@ main {
 .comodos-container p {
   font-family: var(--tipografia-lato);
   font-size: 1.25rem;
-  font-weight: 500;
   color: #1a1a1a;
 }
 

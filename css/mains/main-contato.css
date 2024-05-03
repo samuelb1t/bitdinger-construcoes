@@ -19,10 +19,7 @@
 
 .titulo {
   font-size: 2.25rem;
-  font-family: var(--tipografia-rasa);
-  font-weight: bold;
   line-height: 2.75rem;
-  position: relative;
   margin: 0 0 0 30px;
   display: inline-block;
   margin-left: 100px;
@@ -33,12 +30,6 @@
 }
 
 .titulo::before {
-  width: 5px;
-  height: 12px;
-  content: "";
-  display: inline;
-  background-color: #1D712F;
-  position: absolute;
   bottom: 16px;
   left: 6px;
   border-radius: 0 0 0 5px;
@@ -50,7 +41,6 @@
   gap: 10px;
   font-family: var(--tipografia-rasa);
   font-size: 2rem;
-  font-weight: 400;
 }
 
 .texto img {
@@ -59,10 +49,6 @@
 
 .texto .fone {
   width: 25px;
-}
-
-.medium {
-  font-weight: 500 !important;
 }
 
 .detalhe {

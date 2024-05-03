@@ -34,26 +34,6 @@ main {
   border-radius: 5px 0 0 5px;
 }
 
-.titulo {
-  font-size: 2.75rem;
-  font-family: var(--tipografia-rasa);
-  font-weight: bold;
-  line-height: 2.75rem;
-  position: relative;
-}
-
-.titulo::before {
-  width: 5px;
-  height: 12px;
-  content: "";
-  display: inline;
-  background-color: #1D712F;
-  position: absolute;
-  bottom: 13px;
-  left: -8px;
-  border-radius: 0 0 0 5px;
-}
-
 .txt {
   font-family: var(--tipografia-lato);
   font-size: 1.25rem;
@@ -170,13 +150,8 @@ main img {
 .item-txt {
   font-family: var(--tipografia-rasa);
   font-size: 1.5rem;
-  font-weight: 500;
   color: var(--cor-tipografia);
   line-height: 1.4rem;
-}
-
-.bold {
-  font-weight: 700;
 }
 
 @media(max-width:1200px) {

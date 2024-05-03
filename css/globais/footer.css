@@ -43,7 +43,6 @@
 .subtitulo {
   font-family: var(--tipografia-rasa);
   font-size: 1.25rem;
-  font-weight: 500;
   margin-bottom: 5px;
 }
 
@@ -52,7 +51,6 @@
   color: var(--cor-tipografia);
   font-size: 1rem;
   position: relative;
-  font-weight: 500;
   line-height: 1.25rem;
 }
 

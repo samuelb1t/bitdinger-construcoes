@@ -1,0 +1,131 @@
+.main {
+  max-width: 1200px;
+  margin: 120px auto;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.conteudo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.fotos-container {
+  display: flex;
+  gap: 10px;
+}
+
+.foto-grande {
+  width: 550px;
+}
+
+.foto-pequena {
+  width: 130px;
+}
+
+.infos-container {
+  display: grid;
+  align-items: stretch;
+  background-color: var(--cor-bg-2);
+  justify-self: center;
+  padding: 30px;
+  border-radius: 5px;
+  width: 480px;
+}
+
+.cidade {
+  font-family: var(--tipografia-lato);
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  font-family: var(--tipografia-lato);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--cor-preto);
+  white-space: nowrap;
+}
+
+.interesse {
+  display: flex;
+  align-items: center;
+}
+
+.infotexto {
+  font-family: var(--tipografia-lato);
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #717171;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.preco {
+  align-self: start;
+  margin-top: 15px;
+}
+
+.tag-preco {
+  font-family: var(--tipografia-lato);
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #E6EDE6;
+  background-color: var(--cor-destaque);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--tipografia-lato);
+  line-height: 2rem;
+  padding: 5px 4px 0px 5px;
+  color: var(--cor-preto);
+  border-bottom: 2px solid var(--cor-preto);
+  transition: .3s;
+}
+
+.link:hover {
+  color: #717171;
+  border-color: #717171;
+}
+
+.detalhe {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #DEDEDE;
+  margin: 0 10px 0 10px;
+}
+
+.separador {
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin: 22px 0 18px 0;
+  background-color: #DEDEDE;
+}
+
+.titulo {
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.texto {
+  font-family: var(--tipografia-lato);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}

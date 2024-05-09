@@ -13,9 +13,16 @@ img {
   gap: 80px;
 }
 
+.conteudo-container section {
+  display: grid;
+}
+
 .fotos-container {
   display: flex;
+  width: 550px;
+  flex-wrap: wrap;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .foto-grande {
@@ -24,15 +31,26 @@ img {
 
 .foto-pequena {
   width: 130px;
+  transition: .3s;
+}
+
+.foto-pequena:hover {
+  opacity: 0.8;
+
+}
+
+.selecionada {
+  opacity: 0.5;
 }
 
 .infos-container {
   display: grid;
-  align-items: stretch;
   background-color: var(--cor-bg-2);
   justify-self: center;
   padding: 30px;
+  align-items: stretch;
   border-radius: 5px;
+  box-sizing: border-box;
   width: 480px;
 }
 
@@ -128,4 +146,161 @@ img {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
+}
+
+@media(max-width:1200px) {
+  .main {
+    max-width: 800px;
+  }
+
+  .conteudo-container {
+    gap: 40px;
+  }
+
+  .foto-grande,
+  .fotos-container {
+    width: 400px;
+  }
+
+  .infos-container {
+    width: 400px;
+  }
+
+  .cidade {
+    font-size: 1.75rem;
+  }
+
+}
+
+@media(max-width:800px) {
+  .main {
+    max-width: 600px;
+  }
+
+  .conteudo-container {
+    grid-template-columns: 1fr;
+  }
+
+  .conteudo-container section {
+    justify-self: center;
+  }
+
+  .foto-grande,
+  .fotos-container {
+    width: 550px;
+  }
+
+  .infos-container {
+    width: 550px;
+  }
+
+  .interesse {
+    margin: 5px 0;
+  }
+
+  .tag-preco {
+    padding: 6px;
+  }
+
+  .main .h1 {
+    width: fit-content;
+    margin-left: 40px;
+  }
+
+  .descricao {
+    width: 550px;
+    margin: 0 auto;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media(max-width:600px) {
+  .main {
+    max-width: 450px;
+    margin: 60px auto;
+  }
+
+  .foto-grande,
+  .fotos-container {
+    width: 450px;
+  }
+
+  .foto-pequena {
+    width: 105px;
+  }
+
+  .infos-container,
+  .descricao {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .cidade {
+    font-size: 1.5rem;
+  }
+
+  .texto,
+  .info {
+    font-size: 1.25rem;
+  }
+
+  @media (max-width:450px) {
+    .main {
+      max-width: 100%;
+    }
+
+    .infos-container {
+      padding: 20px;
+    }
+
+    .infos-container,
+    .descricao,
+    .foto-grande,
+    .fotos-container {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main .h1 {
+      margin: 0 auto;
+    }
+
+    .titulo {
+      font-size: 1.75rem;
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    .cidade {
+      font-size: 1.25rem;
+    }
+
+    .link {
+      font-size: 1rem;
+    }
+
+    .texto,
+    .info {
+      font-size: 1rem;
+      line-height: 1.75rem;
+    }
+
+    .infotexto {
+      font-size: .75rem;
+    }
+
+    .tag-preco {
+      font-size: 1.25rem;
+      padding: 5px;
+    }
+  }
 }

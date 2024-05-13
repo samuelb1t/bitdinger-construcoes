@@ -36,7 +36,14 @@ img {
 
 .foto-pequena:hover {
   opacity: 0.8;
+}
 
+.ativa {
+  display: block;
+}
+
+.inativa {
+  display: none !important;
 }
 
 .selecionada {
@@ -261,10 +268,15 @@ img {
       padding: 20px;
     }
 
+    .fotos-container {
+      width: 220px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .infos-container,
     .descricao,
-    .foto-grande,
-    .fotos-container {
+    .foto-grande {
       width: 80%;
       margin-left: auto;
       margin-right: auto;

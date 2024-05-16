@@ -48,14 +48,13 @@ main {
   height: 195px;
   object-fit: cover;
   border-radius: 5px 5px 0 0;
-  position: relative;
 }
 
 .vendida {
   position: absolute;
   z-index: 1;
-  top: 150px;
-  border: 3px solid var(--cor-preto);
+  top: -20px;
+  border: 2px solid var(--cor-preto);
   border-radius: 0 5px 5px 0;
   padding: 5px 10px;
   color: var(--cor-preto);
@@ -166,6 +165,12 @@ main {
     height: 150px;
   }
 
+  .vendida {
+    font-size: 1rem;
+    padding: 4px 8px;
+    top: -15.5px;
+  }
+
   .item-conteudo-container {
     gap: 15px;
     padding: 18px 15px;
@@ -250,6 +255,12 @@ main {
 
   .item-txt p {
     line-height: 1.2rem;
+  }
+
+  .vendida {
+    font-size: .75remrem;
+    padding: 3px 6px;
+    top: -14.5px;
   }
 
   .responsivo {

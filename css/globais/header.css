@@ -24,11 +24,11 @@ header nav {
 li {
   border-bottom: 2px solid transparent;
   transition: .15s;
+  position: relative;
 }
 
 .pagina {
-  border-bottom: 0.5px solid var(--cor-preto);
-  transition: 0s;
+  border-bottom: 2px solid var(--cor-preto);
 }
 
 li a {
@@ -40,8 +40,18 @@ li a {
   padding: 10px 10px 5px 10px;
 }
 
-li:hover {
-  border-bottom: 2px solid black;
+li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  display: block;
+  position: absolute;
+  background-color: black;
+  transition: .3s;
+}
+
+li:hover:after {
+  width: 100%;
 }
 
 li img {

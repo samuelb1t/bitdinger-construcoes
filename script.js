@@ -1,27 +1,41 @@
 //Galeria de Fotos
-const fotinhas = document.querySelectorAll('.foto-pequena');
-fotinhas.forEach(teste);
-function teste(fotinha) {
-  fotinha.addEventListener("click", () => {
-    const fotos = document.querySelectorAll('.foto-grande');
-    const id = fotinha.getAttribute('id');
-    fotinhas.forEach((item) => {
-      if (item.classList.contains('selecionada')) {
-        item.classList.remove('selecionada');
-      }
-    })
-    fotinha.classList.add('selecionada');
-    for (var i = 0; i < 4; i++) {
-      if (fotos[i].getAttribute('id') === id) {
-        if (fotos[i].classList.contains('ativa') === false) {
-          fotos[i].classList.add('ativa');
-          fotos[i].classList.remove('inativa');
-        }
-      }
-      if (fotos[i].getAttribute('id') != id) {
-        fotos[i].classList.remove('ativa');
-        fotos[i].classList.add('inativa');
-      }
-    }
-  })
+const fotosPequenas = document.querySelectorAll('.foto-pequena');
+const fotosGrandes = document.querySelectorAll('.foto-grande');
+fotosPequenas.forEach(trocaFoto);
+function trocaFoto(fotoClicada) {
+	fotoClicada.addEventListener("click", () => {
+		const id = fotoClicada.getAttribute('id'); // id da foto clicada
+
+		//arrumando as fotos clicaveis
+		fotosPequenas.forEach((item) => {
+			if (item.classList.contains('selecionada')) {
+				item.classList.remove('selecionada');
+			}
+		})
+		fotoClicada.classList.add('selecionada');
+
+		fotosGrandes.forEach((foto) => {
+			if (foto.getAttribute('id') === id) {
+				//aparição da foto clicada
+				if (foto.classList.contains('ativa') === false) {
+					foto.classList.add('ativa');
+					foto.classList.remove('inativa');
+
+					//animaçao de saida da foto
+					if (foto.classList.contains('ativa')) {
+						foto.classList.add('saindo');
+						foto.addEventListener('animationend', () => {
+							foto.classList.remove('saindo');
+						})
+					}
+				}
+			}
+			//remoção da foto anterior
+			if (foto.getAttribute('id') != id) {
+				foto.classList.remove('ativa');
+				foto.classList.add('inativa');
+			}
+		})
+	})
 }
+

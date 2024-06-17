@@ -29,6 +29,40 @@ img {
   width: 550px;
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.foto-grande.ativa {
+  display: block;
+  animation: slideIn 0.4s ease-out forwards;
+}
+
+.foto-grande.saindo {
+  display: block;
+  animation: slideOut 0.3s ease-out forwards;
+}
+
 .foto-pequena {
   width: 130px;
   transition: .3s;
@@ -154,6 +188,7 @@ img {
   line-height: 2rem;
   font-weight: 500;
 }
+
 
 @media(max-width:1200px) {
   .main {

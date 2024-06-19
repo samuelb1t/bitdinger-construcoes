@@ -55,6 +55,9 @@ img {
 
 .foto-grande.ativa {
   display: block;
+}
+
+.foto-grande.entrando {
   animation: slideIn 0.4s ease-out forwards;
 }
 
@@ -66,6 +69,7 @@ img {
 .foto-pequena {
   width: 130px;
   transition: .3s;
+  cursor: pointer;
 }
 
 .foto-pequena:hover {
